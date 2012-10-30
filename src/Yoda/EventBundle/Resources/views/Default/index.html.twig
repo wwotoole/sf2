@@ -1,2 +1,12 @@
-Hello {{ name }}!
-This is number {{ count }}
+{% extends '::base.html.twig' %}
+
+{% block title 'Yo momma' %}
+
+{% block body %}
+	{{ event.name }}<br />
+	{{ event.location }}<br />
+	
+	{%- for i in 1..count %}
+		Hello <strong>{{- name|upper -}}</strong>! # {{- i -}}<br />
+	{%- endfor -%}
+{% endblock %}
