@@ -1,5 +1,5 @@
 {
-    "hash": "871ca732d39c832f0b78012cc83cec2e",
+    "hash": "e9387d945c5c90a32b0047c84aa992dd",
     "packages": [
         {
             "name": "doctrine/common",
@@ -18,7 +18,6 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1348120518",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -67,6 +66,48 @@
                 "eventmanager",
                 "annotations",
                 "persistence"
+            ],
+            "time": "1348120518"
+        },
+        {
+            "name": "doctrine/data-fixtures",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "181b71e9a19bcdc93a9bf5c19dc0ef9615656173"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/data-fixtures/zipball/181b71e9a19bcdc93a9bf5c19dc0ef9615656173",
+                "reference": "181b71e9a19bcdc93a9bf5c19dc0ef9615656173",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "1350901469",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\DataFixtures": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                }
+            ],
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database"
             ]
         },
         {
@@ -87,7 +128,6 @@
                 "php": ">=5.3.2",
                 "doctrine/common": "2.3.*"
             },
-            "time": "1348120597",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -129,7 +169,8 @@
                 "persistence",
                 "dbal",
                 "queryobject"
-            ]
+            ],
+            "time": "1348120597"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -160,7 +201,6 @@
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
             },
-            "time": "1347289964",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -197,6 +237,60 @@
                 "orm",
                 "persistence",
                 "dbal"
+            ],
+            "time": "1347289964"
+        },
+        {
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/FixturesBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "9edc67af16e736a31605e7fa9c9e3edbd9db6427"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle/zipball/9edc67af16e736a31605e7fa9c9e3edbd9db6427",
+                "reference": "9edc67af16e736a31605e7fa9c9e3edbd9db6427",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "doctrine/data-fixtures": "*",
+                "doctrine/doctrine-bundle": "1.0.*",
+                "symfony/doctrine-bridge": ">=2.1.0,<2.3-dev"
+            },
+            "time": "1350914272",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\FixturesBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "persistence",
+                "Fixture"
             ]
         },
         {
@@ -222,7 +316,6 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "1348121015",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -266,7 +359,8 @@
             "keywords": [
                 "database",
                 "orm"
-            ]
+            ],
+            "time": "1348121015"
         },
         {
             "name": "jms/aop-bundle",
@@ -388,7 +482,6 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/orm": "*"
             },
-            "time": "1347872946",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -412,7 +505,8 @@
             "keywords": [
                 "dependency injection",
                 "annotations"
-            ]
+            ],
+            "time": "1347872946"
         },
         {
             "name": "jms/metadata",
@@ -494,7 +588,6 @@
                 "symfony/form": "*",
                 "symfony/validator": "*"
             },
-            "time": "1346947943",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -521,7 +614,8 @@
                 "security",
                 "secure",
                 "expression"
-            ]
+            ],
+            "time": "1346947943"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -555,7 +649,6 @@
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
             },
-            "time": "1347622188",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -587,7 +680,8 @@
                 "assets",
                 "compression",
                 "minification"
-            ]
+            ],
+            "time": "1347622188"
         },
         {
             "name": "monolog/monolog",
@@ -614,7 +708,6 @@
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server"
             },
-            "time": "1347983448",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -643,7 +736,8 @@
             "keywords": [
                 "log",
                 "logging"
-            ]
+            ],
+            "time": "1347983448"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -663,7 +757,6 @@
             "require": {
                 "symfony/framework-bundle": "2.1.*"
             },
-            "time": "1347340208",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -689,7 +782,8 @@
             "keywords": [
                 "distribution",
                 "configuration"
-            ]
+            ],
+            "time": "1347340208"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -710,7 +804,6 @@
                 "symfony/framework-bundle": "2.1.*",
                 "doctrine/common": ">=2.1,<2.4-dev"
             },
-            "time": "1348064274",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -736,7 +829,8 @@
             "keywords": [
                 "annotations",
                 "controllers"
-            ]
+            ],
+            "time": "1348064274"
         },
         {
             "name": "sensio/generator-bundle",
@@ -762,7 +856,6 @@
                 "doctrine/orm": ">=2.1,<2.4-dev",
                 "twig/twig": ">=1.8,<2.0-dev"
             },
-            "time": "1348030981",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -784,7 +877,8 @@
                     "email": "fabien@symfony.com"
                 }
             ],
-            "description": "This bundle generates code for you"
+            "description": "This bundle generates code for you",
+            "time": "1348030981"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -867,7 +961,6 @@
             "suggest": {
                 "symfony/twig-bundle": "2.1.*"
             },
-            "time": "1347626244",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -896,7 +989,8 @@
                 "assets",
                 "compression",
                 "minification"
-            ]
+            ],
+            "time": "1347626244"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -924,7 +1018,6 @@
                 "symfony/yaml": "2.1.*",
                 "symfony/config": "2.1.*"
             },
-            "time": "1347983520",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -951,7 +1044,8 @@
                 }
             ],
             "description": "Symfony MonologBundle",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1347983520"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -979,7 +1073,6 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1346243146",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1006,7 +1099,8 @@
                 }
             ],
             "description": "Symfony SwiftmailerBundle",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1346243146"
         },
         {
             "name": "symfony/symfony",
@@ -1068,7 +1162,6 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "dev-master"
             },
-            "time": "1348125180",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1099,7 +1192,8 @@
             "homepage": "http://symfony.com",
             "keywords": [
                 "framework"
-            ]
+            ],
+            "time": "1348125180"
         },
         {
             "name": "twig/extensions",
@@ -1118,7 +1212,6 @@
             "require": {
                 "twig/twig": "1.*"
             },
-            "time": "1346770278",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1146,7 +1239,8 @@
                 "debug",
                 "i18n",
                 "text"
-            ]
+            ],
+            "time": "1346770278"
         },
         {
             "name": "twig/twig",
@@ -1165,7 +1259,6 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1347961095",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1195,17 +1288,16 @@
             "homepage": "http://twig.sensiolabs.org",
             "keywords": [
                 "templating"
-            ]
+            ],
+            "time": "1347961095"
         }
     ],
-    "packages-dev": [
-
-    ],
+    "packages-dev": null,
     "aliases": [
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "doctrine/doctrine-fixtures-bundle": 20
+    }
 }
